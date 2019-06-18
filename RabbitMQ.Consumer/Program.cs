@@ -10,8 +10,8 @@ namespace RabbitMQ.Consumer
     {
         static void Main(string[] args)
         {
-            string type = "simple"; // 简单队列
-            //string type = "work"; // 工作队列
+            //string type = "simple"; // 简单队列
+            string type = "work"; // 工作队列
 
             var rabbitMQService = RabbitMQFactory.CreateRabbitMQService(type);
             rabbitMQService.Receive();

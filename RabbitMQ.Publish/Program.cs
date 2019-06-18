@@ -11,15 +11,15 @@ namespace mq
     {
         static void Main(string[] args)
         {
-            string type = "simple"; // 简单队列
-            //string type = "work"; // 工作队列
+            //string type = "simple"; // 简单队列
+            string type = "work"; // 工作队列
 
-            string message = "Hello World222!";
+            string message = "a.b.c.d.e.f!";
 
             var rabbitMQService = RabbitMQFactory.CreateRabbitMQService(type);
             rabbitMQService.Publish(message);
 
-            Console.ReadKey();
+            Console.ReadLine();
         }
     }
 }

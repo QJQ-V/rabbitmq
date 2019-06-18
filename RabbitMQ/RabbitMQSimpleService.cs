@@ -53,6 +53,9 @@ namespace RabbitMQ
 
                     // 监听队列
                     channel.BasicConsume(_queueName, true, consumer);
+
+                    Console.WriteLine("持续消费中...");
+                    Console.ReadLine();
                 }
             }
         }

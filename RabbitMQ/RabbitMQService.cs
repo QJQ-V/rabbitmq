@@ -18,8 +18,8 @@ namespace RabbitMQ
             {
                 HostName = "127.0.0.1",
                 Port = 5672,
-                //UserName = "admin",
-                //Password = "admin123",
+                UserName = "admin",
+                Password = "admin123",
             };
         }
     }
